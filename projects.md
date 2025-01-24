@@ -5,7 +5,12 @@ feature_text: |
   ## Hello world
 ---
 
-[My GitHub Repositories](https://github.com/nimarak?tab=repositories)
-[Housing Prices Regression model](https://github.com/nimarak/Housing-Prices-Regression-model)
-[ML clustering project](https://github.com/nimarak/Machine-Learning-Second-Project-Clustering)
-[Market-Basket analysis for eCormmerce](https://github.com/nimarak/RMF-Market-Basket-Analysis-for-e-Commerce-SuperStore)
+
+[![My GitHub Repositories](C:\Users\PC\Desktop\nimarak.github.io\assets\images\projpg.jpg)](https://github.com/nimarak?tab=repositories)
+*An innovative web application for task management*
+
+[![Housing Prices Regression model](C:\Users\PC\Desktop\nimarak.github.io\assets\images\projpg.jpg)](https://github.com/nimarak/Housing-Prices-Regression-model)
+*Mobile-first design system with comprehensive documentation*
+
+[![ML clustering project](C:\Users\PC\Desktop\nimarak.github.io\assets\images\projpg.jpg)](hhttps://github.com/nimarak/RMF-Market-Basket-Analysis-for-e-Commerce-SuperStore)
+*Cloud-based solution for data analytics*
