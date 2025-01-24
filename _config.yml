@@ -3,22 +3,30 @@ remote_theme: daviddarnes/alembic@main
 
 # File excludes
 exclude:
-- README.md
-- Gemfile
-- Gemfile.lock
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 # Set plugins
 plugins:
-- jekyll-sitemap
-- jekyll-mentions
-- jekyll-paginate
-- jekyll-seo-tag
-- jekyll-redirect-from
-- jekyll-feed
-- jekyll-commonmark
-- jekyll-include-cache
-- jemoji
-- jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-commonmark
+  - jekyll-include-cache
+  - jemoji
+  - jekyll-remote-theme
+  - jekyll-compress-html
+  - jekyll-assets
+  - jekyll-minifier
 
 # Site settings
 url: 'https://nimarak.github.io/'
@@ -27,30 +35,49 @@ title: 'My website'
 description: 'This is my new website'
 permalink: pretty
 logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+lang: en
+author:
+  name: Your Name
+  email: your.email@example.com
+
+# SEO settings
+twitter:
+  username: your_twitter_handle
+  card: summary_large_image
+facebook:
+  app_id: your_facebook_app_id
+  publisher: your_facebook_page_url
+social:
+  name: Your Name
+  links:
+    - https://twitter.com/your_twitter_handle
+    - https://www.facebook.com/your_facebook_page
+    - https://www.linkedin.com/in/your_linkedin_profile
+    - https://github.com/your_github_profile
 
 # Pagination
 paginate: 5
 paginate_path: /blog/page:num/
 
-
-
 # Header nav
 navigation_header:
-- title: Home
-  url: /
-- title: About
-  url: /about/
-- title: Projects
-  url: /projects/
-- title: Contact
-  url: /contact/
-- title: Blog
-  url: /blog/
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Contact
+    url: /contact/
+  - title: Blog
+    url: /blog/
 
 # Footer nav
 navigation_footer:
-- title: Back to top
-  url: "#top"
+  - title: Back to top
+    url: "#top"
+  - title: Privacy Policy
+    url: /privacy-policy/
 
 # Collections
 collections:
@@ -69,32 +96,60 @@ collections:
     output: true
     description: "My projects"
     feature_image: "https://picsum.photos/2560/600?image=6"
-  
-
 
 # Collection settings
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
-      layout: post # Set the default layout for posts
-  -
-    scope:
+      layout: post
+      comments: true
+      share: true
+  - scope:
       path: ""
       type: "pages"
     values:
-      layout: page # Set the default layout for pages
-  -
-    scope:
+      layout: page
+  - scope:
       path: ""
       type: "contact"
     values:
-      layout: contact # Set the default layout for contact
-  -
-    scope:
+      layout: contact
+  - scope:
       path: ""
       type: "projects"
     values:
-      layout: project # Set the default layout for projects
+      layout: project
+
+# Compression settings
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+# Asset optimization
+assets:
+  compression: true
+  gzip: true
+
+# Additional settings
+markdown: kramdown
+highlighter: rouge
+sass:
+  style: compressed
+
+# Google Analytics
+google_analytics: UA-XXXXXXXX-X
+
+# Disqus comments
+disqus:
+  shortname: your-disqus-shortname
+
+# Set time zone
+timezone: UTC
