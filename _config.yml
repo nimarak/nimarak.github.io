@@ -23,8 +23,8 @@ plugins:
 # Site settings
 url: 'https://nimarak.github.io/'
 baseurl: ''
-title: 'My fist website'
-description: 'This is my first website'
+title: 'My website'
+description: 'This is my new website'
 permalink: pretty
 logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
 
@@ -38,6 +38,10 @@ navigation_header:
   url: /
 - title: About
   url: /about/
+- title: Projects
+  url: /projects/
+- title: Contact
+  url: /contact/
 - title: Blog
   url: /blog/
 
@@ -54,7 +58,7 @@ collections:
     description: "My thoughts and ideas"
     feature_text: |
       Welcome to my blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+    feature_image: "https://picsum.photos/2560/600?image=2"
  
 
 # Collection settings
