@@ -41,115 +41,100 @@ author:
   email: nik.marakis@gmail.com
 
 # SEO settings
-twitter:
-  username: your_twitter_handle
-  card: summary_large_image
-facebook:
-  app_id: your_facebook_app_id
-  publisher: your_facebook_page_url
 social:
-  name: Your Name
+  name: Nikolaos MArakis  # The name associated with social profiles
   links:
-    - https://twitter.com/your_twitter_handle
-    - https://www.facebook.com/your_facebook_page
-    - https://www.linkedin.com/in/your_linkedin_profile
-    - https://github.com/your_github_profile
+    - https://www.linkedin.com/in/nikolaos-marakis/  # LinkedIn profile URL
+    - https://github.com/nimarak  # GitHub profile URL
 
-# Pagination
-paginate: 5
-paginate_path: /blog/page:num/
+# Pagination settings
+paginate: 5  # Number of posts to display per page
+paginate_path: /blog/page:num/  # URL structure for paginated pages
 
-# Header nav
+# Header navigation menu
 navigation_header:
   - title: Home
-    url: /
+    url: /  # URL for the home page
   - title: About
-    url: /about/
+    url: /about/  # URL for the about page
   - title: Projects
-    url: /projects/
+    url: /projects/  # URL for the projects page
   - title: Contact
-    url: /contact/
+    url: /contact/  # URL for the contact page
   - title: Blog
-    url: /blog/
+    url: /blog/  # URL for the blog page
 
-# Footer nav
+# Footer navigation menu
 navigation_footer:
   - title: Back to top
-    url: "#top"
-  - title: Privacy Policy
-    url: /privacy-policy/
+    url: "#top"  # Anchor link to scroll to top of page
+  - title: Projects
+    url: /projects/  # URL for the privacy policy page
 
-# Collections
+# Define collections (groups of related content)
 collections:
   posts:
     title: Posts
-    output: true
+    output: true  # Generate a page for each document in this collection
     description: "My thoughts and ideas"
-    feature_image: "https://picsum.photos/2560/600?image=2"
+    feature_image: "https://picsum.photos/2560/600?image=2"  # Header image for posts
   contact:
     title: Contact
     output: true
     description: "Find me here"
-    feature_image: "https://picsum.photos/2560/600?image=4"
+    feature_image: "https://picsum.photos/2560/600?image=4"  # Header image for contact page
   projects:
     title: Projects
     output: true
     description: "My projects"
-    feature_image: "https://picsum.photos/2560/600?image=6"
+    feature_image: "https://picsum.photos/2560/600?image=6"  # Header image for projects page
 
-# Collection settings
+# Default settings for collections
 defaults:
   - scope:
-      path: ""
-      type: "posts"
+      path: ""  # Apply to all files in the project
+      type: "posts"  # Apply only to posts
     values:
-      layout: post
-      comments: true
-      share: true
+      layout: post  # Use 'post' layout for all posts
+      comments: true  # Enable comments for all posts
+      share: true  # Enable social sharing for all posts
   - scope:
       path: ""
-      type: "pages"
+      type: "pages"  # Apply to all pages
     values:
-      layout: page
+      layout: page  # Use 'page' layout for all pages
   - scope:
       path: ""
-      type: "contact"
+      type: "contact"  # Apply to contact collection
     values:
-      layout: contact
+      layout: contact  # Use 'contact' layout for contact pages
   - scope:
       path: ""
-      type: "projects"
+      type: "projects"  # Apply to projects collection
     values:
-      layout: project
+      layout: project  # Use 'project' layout for project pages
 
-# Compression settings
+# HTML compression settings
 compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
+  clippings: all  # Remove all blank space around HTML tags
+  comments: ["<!-- ", " -->"]  # Preserve these comment types
+  endings: all  # Remove all blank space at the end of HTML elements
   ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: [html, head, body]
+    envs: [local]  # Don't compress HTML in local environment
+  blanklines: false  # Remove blank lines
+  profile: false  # Don't add a timestamp comment
+  startings: [html, head, body]  # Remove space after these elements
 
-# Asset optimization
+# Asset optimization settings
 assets:
-  compression: true
-  gzip: true
+  compression: true  # Enable asset compression
+  gzip: true  # Enable gzip compression for assets
 
-# Additional settings
-markdown: kramdown
-highlighter: rouge
+# Additional site-wide settings
+markdown: kramdown  # Use kramdown as the Markdown processor
+highlighter: rouge  # Use rouge for syntax highlighting
 sass:
-  style: compressed
+  style: compressed  # Compress CSS output
 
-# Google Analytics
-google_analytics: UA-XXXXXXXX-X
-
-# Disqus comments
-disqus:
-  shortname: your-disqus-shortname
-
-# Set time zone
-timezone: UTC
+# Time zone setting
+timezone: UTC  # Set the site's time zone to Coordinated Universal Time
