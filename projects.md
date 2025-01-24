@@ -7,7 +7,7 @@ feature_text: |
 
 
 [![My GitHub Repositories](C:\Users\PC\Desktop\nimarak.github.io\assets\images\projpg.jpg)](https://github.com/nimarak?tab=repositories)
-*An innovative web application for task management*
+**
 
 [![Housing Prices Regression model](C:\Users\PC\Desktop\nimarak.github.io\assets\images\projpg.jpg)](https://github.com/nimarak/Housing-Prices-Regression-model)
 *Mobile-first design system with comprehensive documentation*
